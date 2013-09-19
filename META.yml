@@ -1,37 +1,40 @@
 ---
 abstract: 'define subs that act like `return`'
 author:
-  - 'Toby Inkster <tobyink@cpan.org>'
+  - 'Toby Inkster (TOBYINK) <tobyink@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.59
-  Test::More: 0.61
+  Test::More: 0.96
 configure_requires:
-  ExtUtils::MakeMaker: 6.59
-distribution_type: module
+  ExtUtils::MakeMaker: 6.17
 dynamic_config: 0
-generated_by: 'Module::Install version 1.06'
+generated_by: 'Dist::Inkt::Profile::TOBYINK version 0.012, CPAN::Meta::Converter version 2.120921'
 keywords: []
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-module_name: returning
 name: returning
 no_index:
   directory:
+    - eg
+    - examples
     - inc
     - t
     - xt
+optional_features: {}
+provides:
+  returning:
+    file: lib/returning.pm
+    version: 0.002
 requires:
-  Carp: 1.01
   Scalar::Util: 1.11
   Scope::Upper: 0.16
   Sub::Install: 0.900
   Sub::Name: 0.03
-  perl: 5.6.0
 resources:
+  X_identifier: http://purl.org/NET/cpan-uri/dist/returning/project
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=returning
   homepage: https://metacpan.org/release/returning
   license: http://dev.perl.org/licenses/
-  repository: https://bitbucket.org/tobyink/p5-returning
-version: 0.001
+  repository: https://github.com/tobyink/p5-returning
+version: 0.002
